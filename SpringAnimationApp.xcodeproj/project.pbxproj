@@ -14,6 +14,8 @@
 		8F37F39A2A3B6516000ACE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F37F3992A3B6516000ACE02 /* Assets.xcassets */; };
 		8F37F39D2A3B6516000ACE02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F37F39B2A3B6516000ACE02 /* LaunchScreen.storyboard */; };
 		8F37F3A62A3B663C000ACE02 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 8F37F3A52A3B663C000ACE02 /* SpringAnimation */; };
+		8F37F3D52A3BC165000ACE02 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37F3D42A3BC165000ACE02 /* Animation.swift */; };
+		8F37F3D72A3BC193000ACE02 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37F3D62A3BC193000ACE02 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		8F37F3992A3B6516000ACE02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F37F39C2A3B6516000ACE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F37F39E2A3B6516000ACE02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F37F3D42A3BC165000ACE02 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		8F37F3D62A3BC193000ACE02 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +62,65 @@
 		8F37F38F2A3B6514000ACE02 /* SpringAnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				8F37F3902A3B6514000ACE02 /* AppDelegate.swift */,
-				8F37F3922A3B6514000ACE02 /* SceneDelegate.swift */,
-				8F37F3942A3B6514000ACE02 /* ViewController.swift */,
-				8F37F3962A3B6514000ACE02 /* Main.storyboard */,
-				8F37F3992A3B6516000ACE02 /* Assets.xcassets */,
-				8F37F39B2A3B6516000ACE02 /* LaunchScreen.storyboard */,
-				8F37F39E2A3B6516000ACE02 /* Info.plist */,
+				8F37F3D12A3BC0F6000ACE02 /* Services */,
+				8F37F3D02A3BC0E7000ACE02 /* Models */,
+				8F37F3CE2A3BC0B0000ACE02 /* App */,
+				8F37F3CF2A3BC0D7000ACE02 /* ViewControllers */,
+				8F37F3D32A3BC124000ACE02 /* Storyboards */,
+				8F37F3D22A3BC10B000ACE02 /* Resources */,
 			);
 			path = SpringAnimationApp;
+			sourceTree = "<group>";
+		};
+		8F37F3CE2A3BC0B0000ACE02 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8F37F3902A3B6514000ACE02 /* AppDelegate.swift */,
+				8F37F3922A3B6514000ACE02 /* SceneDelegate.swift */,
+				8F37F39E2A3B6516000ACE02 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8F37F3CF2A3BC0D7000ACE02 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F37F3942A3B6514000ACE02 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8F37F3D02A3BC0E7000ACE02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F37F3D42A3BC165000ACE02 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F37F3D12A3BC0F6000ACE02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F37F3D62A3BC193000ACE02 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8F37F3D22A3BC10B000ACE02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F37F3992A3B6516000ACE02 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F37F3D32A3BC124000ACE02 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8F37F3962A3B6514000ACE02 /* Main.storyboard */,
+				8F37F39B2A3B6516000ACE02 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,7 +154,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					8F37F38C2A3B6514000ACE02 = {
 						CreatedOnToolsVersion = 14.2;
@@ -148,6 +202,8 @@
 			files = (
 				8F37F3952A3B6514000ACE02 /* ViewController.swift in Sources */,
 				8F37F3912A3B6514000ACE02 /* AppDelegate.swift in Sources */,
+				8F37F3D52A3BC165000ACE02 /* Animation.swift in Sources */,
+				8F37F3D72A3BC193000ACE02 /* DataStore.swift in Sources */,
 				8F37F3932A3B6514000ACE02 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +266,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -270,6 +327,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -297,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9QM497LW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringAnimationApp/Info.plist;
+				INFOPLIST_FILE = SpringAnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,6 +372,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -329,7 +388,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9QM497LW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringAnimationApp/Info.plist;
+				INFOPLIST_FILE = SpringAnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,6 +405,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
